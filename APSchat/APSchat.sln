@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APSchat", "APSchat\APSchat.csproj", "{4E9FDA7F-D4FF-46E6-BB2C-99579B646CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat", "Chat\Chat.csproj", "{5F6A067F-BF4F-447C-AC17-43116456A7C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E9FDA7F-D4FF-46E6-BB2C-99579B646CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9FDA7F-D4FF-46E6-BB2C-99579B646CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9FDA7F-D4FF-46E6-BB2C-99579B646CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9FDA7F-D4FF-46E6-BB2C-99579B646CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F6A067F-BF4F-447C-AC17-43116456A7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F6A067F-BF4F-447C-AC17-43116456A7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F6A067F-BF4F-447C-AC17-43116456A7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F6A067F-BF4F-447C-AC17-43116456A7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4D4C2EA-C2F3-49E3-A60B-F26BD4839209}
+	EndGlobalSection
+EndGlobal

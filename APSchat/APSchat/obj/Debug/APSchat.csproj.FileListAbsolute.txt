@@ -1,0 +1,12 @@
+C:\Users\guihj\source\repos\APSchat\APSchat\bin\Debug\APSchat.exe.config
+C:\Users\guihj\source\repos\APSchat\APSchat\bin\Debug\APSchat.exe
+C:\Users\guihj\source\repos\APSchat\APSchat\bin\Debug\APSchat.pdb
+C:\Users\guihj\source\repos\APSchat\APSchat\bin\Debug\SimpleTCP.dll
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.csprojAssemblyReference.cache
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.Servidor.resources
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.Properties.Resources.resources
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.csproj.GenerateResource.cache
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.csproj.CoreCompileInputs.cache
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.csproj.CopyComplete
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.exe
+C:\Users\guihj\source\repos\APSchat\APSchat\obj\Debug\APSchat.pdb
