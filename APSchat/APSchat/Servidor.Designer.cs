@@ -121,6 +121,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Servidor";
             this.Text = "Servidor";
+            this.Load += new System.EventHandler(this.Servidor_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

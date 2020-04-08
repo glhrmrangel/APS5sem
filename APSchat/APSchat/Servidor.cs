@@ -42,6 +42,11 @@ namespace APSchat
             btnFim.Enabled = true;
 
             txtStatus1.Text = "Iniciando Conexão";
+
+            System.Net.IPAddress ip = System.Net.IPAddress.Parse(tbHost.Text);
+            servidor.Start(ip, Convert.ToInt32(tbPort.Text));
+
+            txtStatus1.Text = "Iniciando Conexão";
             if (servidor.IsStarted)
 
                 txtStatus1.Text = "Conexão bem sucedida";
@@ -50,15 +55,20 @@ namespace APSchat
                 txtStatus1.Text = "Falha na conexão!";
                 throw new System.ArgumentException("Problema no início da conexão, verifique as variáveis e tente novamente");
             }
-
-            System.Net.IPAddress ip = new System.Net.IPAddress(long.Parse(tbHost.Text));
-            servidor.Start(ip, Convert.ToInt32(tbPort.Text));
         }
 
         private void btnFim_Click(object sender, EventArgs e)
         {
             if (servidor.IsStarted)
                 servidor.Stop();
+        }
+
+        private void Servidor_Load_1(object sender, EventArgs e)
+        {
+            servidor = new SimpleTcpServer();
+            servidor.Delimiter = 0x13;
+            servidor.StringEncoder = Encoding.UTF8;
+            servidor.DataReceived += Server_DataReceived;
         }
     }
 }
