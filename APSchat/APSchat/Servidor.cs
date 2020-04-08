@@ -20,20 +20,12 @@ namespace APSchat
 
         SimpleTcpServer servidor;
 
-        private void Servidor_Load(object sender, EventArgs e)
-        {
-            servidor = new SimpleTcpServer();
-            servidor.Delimiter = 0x13;
-            servidor.StringEncoder = Encoding.UTF8;
-            servidor.DataReceived += Server_DataReceived;
-        }
-
         private void Server_DataReceived(object sender, SimpleTCP.Message e)
         {
             txtStatus1.Invoke((MethodInvoker)delegate ()
             {
                 txtStatus1.Text += e.MessageString;
-                e.ReplyLine(string.Format("You said: {0}", e.MessageString));
+                e.ReplyLine(string.Format("Você disse: {0} \r\n", e.MessageString));
             });
         }
 
@@ -48,11 +40,10 @@ namespace APSchat
 
             txtStatus1.Text = "Iniciando Conexão";
             if (servidor.IsStarted)
-
-                txtStatus1.Text = "Conexão bem sucedida";
+                txtStatus1.Text = "Conexão bem sucedida \r\n";
             else
             {
-                txtStatus1.Text = "Falha na conexão!";
+                txtStatus1.Text = "Falha na conexão! \r\n";
                 throw new System.ArgumentException("Problema no início da conexão, verifique as variáveis e tente novamente");
             }
         }
@@ -66,7 +57,7 @@ namespace APSchat
         private void Servidor_Load_1(object sender, EventArgs e)
         {
             servidor = new SimpleTcpServer();
-            servidor.Delimiter = 0x13;
+            servidor.Delimiter = 0x13; // o problema do [] tá aqui
             servidor.StringEncoder = Encoding.UTF8;
             servidor.DataReceived += Server_DataReceived;
         }

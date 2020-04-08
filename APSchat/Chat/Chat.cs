@@ -16,6 +16,7 @@ namespace Chat
         public Chat()
         {
             InitializeComponent();
+            tbDisplay.ScrollBars = ScrollBars.Vertical;
         }
 
         SimpleTcpClient chat;
@@ -30,7 +31,9 @@ namespace Chat
         {
             btnConectar.Enabled = false;
             btnDesconectar.Enabled = true;
-            chat.Connect(tbHost.Text, Convert.ToInt32(tbPort.Text));
+            chat.Connect(tbHost.Text, Convert.ToInt32(tbPort.Text));           
+            tbDisplay.Text += "Conexão Realizada \r\n";
+
         }
 
         private void tbHost_TextChanged(object sender, EventArgs e)
