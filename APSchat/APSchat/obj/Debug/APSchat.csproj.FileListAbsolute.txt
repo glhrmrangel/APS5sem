@@ -22,3 +22,15 @@ C:\Repos\APSchat\APSchat\obj\Debug\APSchat.csproj.CoreCompileInputs.cache
 C:\Repos\APSchat\APSchat\obj\Debug\APSchat.csproj.CopyComplete
 C:\Repos\APSchat\APSchat\obj\Debug\APSchat.exe
 C:\Repos\APSchat\APSchat\obj\Debug\APSchat.pdb
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\bin\Debug\APSchat.exe.config
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\bin\Debug\APSchat.exe
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\bin\Debug\APSchat.pdb
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\bin\Debug\SimpleTCP.dll
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.csprojAssemblyReference.cache
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.Servidor.resources
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.Properties.Resources.resources
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.csproj.GenerateResource.cache
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.csproj.CoreCompileInputs.cache
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.csproj.CopyComplete
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.exe
+D:\Programing\GITHUB\APS5sem\APSchat\APSchat\obj\Debug\APSchat.pdb

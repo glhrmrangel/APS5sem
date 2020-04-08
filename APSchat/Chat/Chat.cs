@@ -58,7 +58,8 @@ namespace Chat
         {
             tbDisplay.Invoke((MethodInvoker)delegate ()
             {
-                tbDisplay.Text += e.MessageString;
+                tbDisplay.Text += e.MessageString + "\r\n";
+                
             });
         }
 

@@ -1,0 +1,12 @@
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\bin\Release\Chat.exe.config
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\bin\Release\Chat.exe
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\bin\Release\Chat.pdb
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\bin\Release\SimpleTCP.dll
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.csprojAssemblyReference.cache
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.Chat.resources
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.Properties.Resources.resources
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.csproj.GenerateResource.cache
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.csproj.CoreCompileInputs.cache
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.csproj.CopyComplete
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.exe
+D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.pdb

@@ -121,6 +121,7 @@
             this.tbDisplay.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tbDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbDisplay.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbDisplay.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDisplay.Location = new System.Drawing.Point(17, 70);
             this.tbDisplay.Multiline = true;
             this.tbDisplay.Name = "tbDisplay";
@@ -139,7 +140,7 @@
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,7 +155,7 @@
             this.Controls.Add(this.lblPort);
             this.Controls.Add(this.lblHost);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Chat";
             this.Text = "Chatter";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
