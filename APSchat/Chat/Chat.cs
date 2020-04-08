@@ -20,6 +20,12 @@ namespace Chat
 
         SimpleTcpClient chat;
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            chat = new SimpleTcpClient();
+            chat.StringEncoder = Encoding.UTF8;
+            chat.DataReceived += ClientDataReceived;
+        }
         private void btnConectar_Click(object sender, EventArgs e)
         {
             btnConectar.Enabled = false;
@@ -47,12 +53,6 @@ namespace Chat
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            chat = new SimpleTcpClient();
-            chat.StringEncoder = Encoding.UTF8;
-            chat.DataReceived += ClientDataReceived;
-        }
 
         private void ClientDataReceived(object sender, SimpleTCP.Message e)
         {

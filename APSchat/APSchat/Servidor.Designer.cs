@@ -35,7 +35,7 @@
             this.lblPort = new System.Windows.Forms.Label();
             this.lblHost = new System.Windows.Forms.Label();
             this.btnFim = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtStatus1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnInicial
@@ -99,19 +99,19 @@
             this.btnFim.UseVisualStyleBackColor = true;
             this.btnFim.Click += new System.EventHandler(this.btnFim_Click);
             // 
-            // textBox3
+            // txtStatus1
             // 
-            this.textBox3.Location = new System.Drawing.Point(17, 188);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(323, 316);
-            this.textBox3.TabIndex = 15;
+            this.txtStatus1.Location = new System.Drawing.Point(17, 188);
+            this.txtStatus1.Multiline = true;
+            this.txtStatus1.Name = "txtStatus1";
+            this.txtStatus1.ReadOnly = true;
+            this.txtStatus1.Size = new System.Drawing.Size(323, 316);
+            this.txtStatus1.TabIndex = 15;
             // 
             // Servidor
             // 
             this.ClientSize = new System.Drawing.Size(352, 519);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtStatus1);
             this.Controls.Add(this.btnFim);
             this.Controls.Add(this.btnInicial);
             this.Controls.Add(this.tbPort);
@@ -142,7 +142,7 @@
         private System.Windows.Forms.Label lblPort;
         private System.Windows.Forms.Label lblHost;
         private System.Windows.Forms.Button btnFim;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtStatus1;
     }
 }
 

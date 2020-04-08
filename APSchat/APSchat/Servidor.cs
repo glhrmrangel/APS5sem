@@ -30,9 +30,9 @@ namespace APSchat
 
         private void Server_DataReceived(object sender, SimpleTCP.Message e)
         {
-            txtStatus.Invoke((MethodInvoker)delegate ()
+            txtStatus1.Invoke((MethodInvoker)delegate ()
             {
-                txtStatus.Text += e.MessageString;
+                txtStatus1.Text += e.MessageString;
                 e.ReplyLine(string.Format("You said: {0}", e.MessageString));
             });
         }
@@ -41,13 +41,13 @@ namespace APSchat
         {
             btnFim.Enabled = true;
 
-            //txtStatus. = "Iniciando Conexão";
+            txtStatus1.Text = "Iniciando Conexão";
             if (servidor.IsStarted)
-            { }
-                //txtStatus.Text = "Conexão bem sucedida";
+
+                txtStatus1.Text = "Conexão bem sucedida";
             else
             {
-                //txtStatus.Text = "Falha na conexão!";
+                txtStatus1.Text = "Falha na conexão!";
                 throw new System.ArgumentException("Problema no início da conexão, verifique as variáveis e tente novamente");
             }
 
