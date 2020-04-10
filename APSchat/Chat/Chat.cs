@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,8 +32,15 @@ namespace Chat
         {
             btnConectar.Enabled = false;
             btnDesconectar.Enabled = true;
-            chat.Connect(tbHost.Text, Convert.ToInt32(tbPort.Text));           
-            tbDisplay.Text += "Conexão Realizada \r\n";
+            try
+            {
+                chat.Connect(tbHost.Text, Convert.ToInt32(tbPort.Text));           
+                tbDisplay.Text += "Conexão Realizada \r\n";
+            }
+            catch(System.Net.Sockets.SocketException exception)
+            {
+                tbDisplay.Text += "Conexão não disponível \r\n";
+            }
 
         }
 
@@ -61,14 +69,22 @@ namespace Chat
         {
             tbDisplay.Invoke((MethodInvoker)delegate ()
             {
-                tbDisplay.Text += e.MessageString + "\r\n";
-                
+                String msg = e.MessageString.Replace("\u0013", "");
+                tbDisplay.Text += msg + "\r\n";
+                //tbDisplay.Text += e.MessageString + "\r\n";
+
+
             });
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             chat.WriteLineAndGetReply(tbMsg.Text, TimeSpan.FromSeconds(3));
+        }
+
+        private void tbDisplay_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

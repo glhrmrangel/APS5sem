@@ -24,8 +24,9 @@ namespace APSchat
         {
             txtStatus1.Invoke((MethodInvoker)delegate ()
             {
-                txtStatus1.Text += e.MessageString;
-                e.ReplyLine(string.Format("Você disse: {0} \r\n", e.MessageString));
+                String msg = e.MessageString.Replace("\u0013", "");
+                txtStatus1.Text += msg;
+                e.ReplyLine(string.Format("Você disse: {0} \r\n", msg));
             });
         }
 

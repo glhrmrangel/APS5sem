@@ -128,6 +128,7 @@
             this.tbDisplay.ReadOnly = true;
             this.tbDisplay.Size = new System.Drawing.Size(771, 267);
             this.tbDisplay.TabIndex = 11;
+            this.tbDisplay.TextChanged += new System.EventHandler(this.tbDisplay_TextChanged);
             // 
             // btnDesconectar
             // 
