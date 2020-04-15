@@ -86,5 +86,24 @@ namespace Chat
         {
 
         }
+
+        private void btnConfig_Click(object sender, EventArgs e)
+        {
+            btnConectar.Visible = false;
+            btnDesconectar.Visible = false;
+            tbHost.Visible = true;
+            btnSalvar.Visible = true;
+            tbPort.Visible = true;
+            btnSalvar.Visible = true;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            tbHost.Visible = false;
+            btnSalvar.Visible = false;
+            tbPort.Visible = false;
+            btnConectar.Visible = true;
+            btnDesconectar.Visible = true;
+        }
     }
 }
