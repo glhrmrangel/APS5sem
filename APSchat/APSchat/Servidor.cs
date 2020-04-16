@@ -26,7 +26,7 @@ namespace APSchat
             {
                 String msg = e.MessageString.Replace("\u0013", "");
                 txtStatus1.Text += msg;
-                e.ReplyLine(string.Format("Você disse: {0} \r\n", msg));
+                e.ReplyLine(string.Format("{0} \r\n", msg));
             });
         }
 

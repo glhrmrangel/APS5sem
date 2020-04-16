@@ -39,9 +39,9 @@ namespace Chat
             }
             catch(System.Net.Sockets.SocketException exception)
             {
-                tbDisplay.Text += "Conexão não disponível \r\n";
+                tbDisplay.Text += "Conexão não disponível \r\n Mensagem de erro: {0}" + exception;
+                chat.Dispose();
             }
-
         }
 
         private void tbHost_TextChanged(object sender, EventArgs e)
@@ -67,19 +67,32 @@ namespace Chat
 
         private void ClientDataReceived(object sender, SimpleTCP.Message e)
         {
+            try
+            { 
             tbDisplay.Invoke((MethodInvoker)delegate ()
             {
                 String msg = e.MessageString.Replace("\u0013", "");
                 tbDisplay.Text += msg + "\r\n";
                 //tbDisplay.Text += e.MessageString + "\r\n";
-
-
             });
+            }
+            catch
+            {
+                tbDisplay.Text += "ERRO: Não foi possível receber os dados do servidor";
+            }
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            chat.WriteLineAndGetReply(tbMsg.Text, TimeSpan.FromSeconds(3));
+            try
+            {
+            chat.WriteLineAndGetReply(tbID.Text + " disse: " + tbMsg.Text, TimeSpan.FromSeconds(1));
+            }
+            catch (System.Net.Sockets.SocketException exception)
+            {
+                tbDisplay.Text += "Conexão não disponível \r\n Mensagem de erro: {0}" + exception;
+                chat.Dispose();
+            }
         }
 
         private void tbDisplay_TextChanged(object sender, EventArgs e)

@@ -10,3 +10,15 @@ D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.csproj.CoreCompileInp
 D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.csproj.CopyComplete
 D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.exe
 D:\Programing\GITHUB\APS5sem\APSchat\Chat\obj\Release\Chat.pdb
+C:\Repos\APSchat\Chat\bin\Release\Chat.exe.config
+C:\Repos\APSchat\Chat\bin\Release\Chat.exe
+C:\Repos\APSchat\Chat\bin\Release\Chat.pdb
+C:\Repos\APSchat\Chat\bin\Release\SimpleTCP.dll
+C:\Repos\APSchat\Chat\obj\Release\Chat.csprojAssemblyReference.cache
+C:\Repos\APSchat\Chat\obj\Release\Chat.Chat.resources
+C:\Repos\APSchat\Chat\obj\Release\Chat.Properties.Resources.resources
+C:\Repos\APSchat\Chat\obj\Release\Chat.csproj.GenerateResource.cache
+C:\Repos\APSchat\Chat\obj\Release\Chat.csproj.CoreCompileInputs.cache
+C:\Repos\APSchat\Chat\obj\Release\Chat.csproj.CopyComplete
+C:\Repos\APSchat\Chat\obj\Release\Chat.exe
+C:\Repos\APSchat\Chat\obj\Release\Chat.pdb
