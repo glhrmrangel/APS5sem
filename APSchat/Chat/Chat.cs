@@ -39,7 +39,7 @@ namespace Chat
             }
             catch(System.Net.Sockets.SocketException exception)
             {
-                tbDisplay.Text += "Conexão não disponível \r\n Mensagem de erro: {0}" + exception;
+                tbDisplay.Text += "Conexão não disponível \r\n";
                 chat.Dispose();
             }
         }
@@ -72,8 +72,7 @@ namespace Chat
             tbDisplay.Invoke((MethodInvoker)delegate ()
             {
                 String msg = e.MessageString.Replace("\u0013", "");
-                tbDisplay.Text += msg + "\r\n";
-                //tbDisplay.Text += e.MessageString + "\r\n";
+                tbDisplay.Text += msg;
             });
             }
             catch
@@ -86,7 +85,8 @@ namespace Chat
         {
             try
             {
-            chat.WriteLineAndGetReply(tbID.Text + " disse: " + tbMsg.Text, TimeSpan.FromSeconds(1));
+            chat.WriteLineAndGetReply(tbID.Text + " disse: " + tbMsg.Text, TimeSpan.FromSeconds(0));
+                tbMsg.Text = "";
             }
             catch (System.Net.Sockets.SocketException exception)
             {
@@ -117,6 +117,13 @@ namespace Chat
             tbPort.Visible = false;
             btnConectar.Visible = true;
             btnDesconectar.Visible = true;
+        }
+
+        private void btnDesconectar_Click(object sender, EventArgs e)
+        {
+            chat.Disconnect();
+            btnConectar.Enabled = true;
+            btnDesconectar.Enabled = false;
         }
     }
 }

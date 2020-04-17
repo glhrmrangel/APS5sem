@@ -25,8 +25,8 @@ namespace APSchat
             txtStatus1.Invoke((MethodInvoker)delegate ()
             {
                 String msg = e.MessageString.Replace("\u0013", "");
-                txtStatus1.Text += msg;
-                e.ReplyLine(string.Format("{0} \r\n", msg));
+                txtStatus1.Text += msg + "\r\n";
+                servidor.BroadcastLine(string.Format("{0} \r\n", msg));
             });
         }
 

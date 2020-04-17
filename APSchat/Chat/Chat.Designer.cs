@@ -120,6 +120,7 @@
             this.btnDesconectar.TabIndex = 12;
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.UseVisualStyleBackColor = true;
+            this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
             // lblID
             // 
