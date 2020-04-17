@@ -6,6 +6,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -85,7 +87,16 @@ namespace Chat
         {
             try
             {
-            chat.WriteLineAndGetReply(tbID.Text + " disse: " + tbMsg.Text, TimeSpan.FromSeconds(0));
+                String id;
+                if (tbID.Text != "" && tbID.Text != null)
+                {
+                    id = tbID.Text;
+                }
+                else
+                {
+                    id = GetLocalIPAddress();
+                }
+                chat.WriteLineAndGetReply(id + " disse: " + tbMsg.Text, TimeSpan.FromSeconds(0));
                 tbMsg.Text = "";
             }
             catch (System.Net.Sockets.SocketException exception)
@@ -124,6 +135,27 @@ namespace Chat
             chat.Disconnect();
             btnConectar.Enabled = true;
             btnDesconectar.Enabled = false;
+        }
+
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode.ToString() == "Return")
+            {
+                btnEnviar.PerformClick();
+            }
+        }
+
+        public static string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
         }
     }
 }

@@ -95,6 +95,7 @@
             this.tbMsg.Name = "tbMsg";
             this.tbMsg.Size = new System.Drawing.Size(636, 71);
             this.tbMsg.TabIndex = 10;
+            this.tbMsg.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_KeyDown);
             // 
             // tbDisplay
             // 
